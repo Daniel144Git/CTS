@@ -6,10 +6,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import ro.ase.cts.clase.Aplicant;
 import ro.ase.cts.clase.Student;
 
-public class StudentReader {
-	public static List<Student> readStudents(String file) throws FileNotFoundException, NumberFormatException {
+public class StudentReader extends AplicantiReader {
+	public StudentReader(String fileName) {
+		super(fileName);
+		// TODO Auto-generated constructor stub
+	}
+
+	public List<Student> readAplicanti(String file) throws FileNotFoundException, NumberFormatException {
 		Scanner input = new Scanner(new File(file));
 		input.useDelimiter(",|\n");
 		List<Student> studenti = new ArrayList<Student>();
@@ -30,5 +36,11 @@ public class StudentReader {
 		}
 		input.close();
 		return studenti;
+	}
+
+	@Override
+	public List<Aplicant> readAplicanti() throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
