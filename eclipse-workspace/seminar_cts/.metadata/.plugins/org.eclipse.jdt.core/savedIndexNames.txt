@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\Daniel\eclipse-workspace\seminar_cts\.metadata\.plugins\org.eclipse.jdt.core
+2085438896.index
+4248790200.index
+2074328222.index
+4277585025.index
